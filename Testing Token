@@ -1,0 +1,15 @@
+// In Remix console or web3 script
+// Check total supply
+await contract.totalSupply()
+
+// Check your balance
+await contract.balanceOf("YOUR_ADDRESS")
+
+// Transfer tokens
+await contract.transfer("RECIPIENT_ADDRESS", "1000000000000000000") // 1 token
+
+// Mint new tokens (owner only)
+await contract.mint("RECIPIENT_ADDRESS", "1000000000000000000") // 1 token
+
+// Check contract info
+await contract.getContractInfo()
